@@ -1,22 +1,35 @@
-module gitee.com/yxyy666/simplebank
+module github.com/18941325888/simple_bank
 
 go 1.18
 
 require github.com/lib/pq v1.10.6
 
 require (
-	github.com/acroca/go-symbols v0.1.1 // indirect
-	github.com/cweill/gotests v1.6.0 // indirect
+	github.com/gin-contrib/sse v0.1.0 // indirect
+	github.com/go-playground/locales v0.14.0 // indirect
+	github.com/go-playground/universal-translator v0.18.0 // indirect
+	github.com/go-playground/validator/v10 v10.11.0 // indirect
+	github.com/goccy/go-json v0.9.8 // indirect
+	github.com/google/go-cmp v0.5.8 // indirect
+	github.com/json-iterator/go v1.1.12 // indirect
+	github.com/leodido/go-urn v1.2.1 // indirect
+	github.com/mattn/go-isatty v0.0.14 // indirect
+	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
+	github.com/modern-go/reflect2 v1.0.2 // indirect
+	github.com/pelletier/go-toml/v2 v2.0.2 // indirect
+	github.com/ugorji/go/codec v1.2.7 // indirect
+	golang.org/x/crypto v0.0.0-20220622213112-05595931fe9d // indirect
+	golang.org/x/net v0.0.0-20220708220712-1185a9018129 // indirect
+	golang.org/x/text v0.3.7 // indirect
+	google.golang.org/protobuf v1.28.0 // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
+)
+
+require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/karrick/godirwalk v1.12.0 // indirect
-	github.com/pkg/errors v0.8.1 // indirect
+	github.com/gin-gonic/gin v1.8.1
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/ramya-rao-a/go-outline v0.0.0-20210608161538-9736a4bde949 // indirect
-	github.com/stretchr/objx v0.4.0 // indirect
-	github.com/stretchr/testify v1.8.0 // indirect
-	github.com/uudashr/gopkgs/v2 v2.1.2 // indirect
-	golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4 // indirect
-	golang.org/x/sys v0.0.0-20211019181941-9d821ace8654 // indirect
-	golang.org/x/tools v0.1.11 // indirect
+	github.com/stretchr/testify v1.8.0
+	golang.org/x/sys v0.0.0-20220712014510-0a85c31ab51e // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

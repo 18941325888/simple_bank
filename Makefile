@@ -12,4 +12,7 @@ sqlc:
 	docker run --rm -v D:\code\GO\src\SIMPLE_BANK\:/src -w /src kjconroy/sqlc generate
 test:
 	go test -v -cover ./...
-.PHONY:postgres createdb dropdb migrateup migratedown sqlc test
+server:
+	go run main.go
+
+.PHONY:postgres createdb dropdb migrateup migratedown sqlc test server

@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"gitee.com/yxyy666/simplebank/util"
+	"github.com/18941325888/simple_bank/util"
 	"github.com/stretchr/testify/require"
 )
 
@@ -81,12 +81,12 @@ func TestListAccount(t *testing.T) {
 		createRandomAccount(t)
 	}
 
-	arg := ListAccountParams{
+	arg := ListAccountsParams{
 		Limit:  5,
 		Offset: 5,
 	}
 
-	accounts, err := testQueries.ListAccount(context.Background(), arg)
+	accounts, err := testQueries.ListAccounts(context.Background(), arg)
 	require.NoError(t, err)
 	require.Len(t, accounts, 5)
 
