@@ -3,6 +3,7 @@ module github.com/18941325888/simple_bank
 go 1.18
 
 require (
+	github.com/golang/mock v1.6.0
 	github.com/lib/pq v1.10.6
 	github.com/spf13/viper v1.12.0
 )
