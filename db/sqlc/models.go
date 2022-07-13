@@ -41,3 +41,18 @@ type Transfer struct {
 	// 创建时间
 	CreatedAt time.Time `json:"created_at"`
 }
+
+type User struct {
+	// owner
+	Username string `json:"username"`
+	// 密码
+	HashedPassword string `json:"hashed_password"`
+	// 全名
+	FullName string `json:"full_name"`
+	// 电子邮件
+	Email string `json:"email"`
+	// 上次修改密码时间
+	PasswordChangeAt time.Time `json:"password_change_at"`
+	// 创建时间
+	CreatedAt time.Time `json:"created_at"`
+}
