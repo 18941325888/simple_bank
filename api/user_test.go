@@ -29,7 +29,7 @@ func (e eqCreateUerParamsMatcher) Matches(x interface{}) bool {
 		return false
 	}
 
-	err := util.CheckPassword(arg.HashedPassword, e.password)
+	err := util.CheckPassword(e.password, arg.HashedPassword)
 	if err != nil {
 		return false
 	}
@@ -52,7 +52,7 @@ func TestCreateUserAPI(t *testing.T) {
 		name          string
 		body          gin.H
 		buildStubs    func(store *mockdb.MockStore)
-		checkResponse func(recorder *httptest.ResponseRecorder)
+		checkResponse func(recoder *httptest.ResponseRecorder)
 	}{
 		{
 			name: "ok",
