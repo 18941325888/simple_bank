@@ -3,8 +3,8 @@ module github.com/18941325888/simple_bank
 go 1.18
 
 require (
-	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/go-playground/validator/v10 v10.11.0
+	github.com/golang-jwt/jwt/v4 v4.4.2
 	github.com/golang/mock v1.6.0
 	github.com/lib/pq v1.10.6
 	github.com/o1egl/paseto v1.0.0
