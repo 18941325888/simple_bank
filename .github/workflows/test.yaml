@@ -8,7 +8,8 @@ on:
 
 jobs:
 
-  build:
+  test:
+    name: Test
     runs-on: ubuntu-latest
 
     services:
@@ -27,13 +28,15 @@ jobs:
           --health-retries 5
 
     steps:
-    - uses: actions/checkout@v3
-
     - name: Set up Go
       uses: actions/setup-go@v3
       with:
         go-version: 1.18
+      id: go
 
+    - name: Check out code into the Go module directory
+      uses: actions/checkout@v3
+      
     - name: Install golang-migrate
       run: |
        curl -L https://github.com/golang-migrate/migrate/releases/download/v4.15.2/migrate.linux-amd64.tar.gz | tar xvz
